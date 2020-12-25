@@ -1,0 +1,16 @@
+[[package]]
+category = "main"
+description = "A simple nest list"
+name = "function"
+optional = false
+python-versions = "*"
+version = "1.2.0"
+
+[metadata]
+content-hash = "ccf5b3764102d89782783403c1d158571f2713fb182d4bbf8a543ddef979c2bf"
+python-versions = "^3.8"
+
+[metadata.files]
+function = [
+    {file = "function-1.2.0.tar.gz", hash = "sha256:53eb5eb647e8bec5965fac4870e4bb96fb0fa87960bb21e3e10d2889597fbb7f"},
+]

@@ -2,6 +2,7 @@ from lists import Lists
 from matrix import Matrix
 from dictionaries import Dictry
 from basics import Basics
+from myFunctions import MyFunctions
 
 str = "Umakanth Pai"
 
@@ -25,6 +26,19 @@ d1 = Dictry()
 b1 = Basics()
 #b1.ternary(True)
 #b1.ternary(False)
-b1.iterable()
+#b1.iterable()
+#b1.listUsingRange()
+#b1.doEnumerate()
+#b1.whileElse()
+#b1.whileBreak()
+#b1.usePassPlaceholder()
+#b1.basicsExercise()
+#b1.basicsExerciseDuplicates()
+
+f1=MyFunctions()
+f1.callHello()
+
+
+
 
 
