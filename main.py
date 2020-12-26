@@ -3,6 +3,8 @@ from matrix import Matrix
 from dictionaries import Dictry
 from basics import Basics
 from myFunctions import MyFunctions
+from special import Special
+from oops import Part
 
 str = "Umakanth Pai"
 
@@ -35,8 +37,22 @@ b1 = Basics()
 #b1.basicsExercise()
 #b1.basicsExerciseDuplicates()
 
+# Adding custom class documentaion
+# exec(open("myFunctions.py").read())
+# print(globals())
+
 f1=MyFunctions()
-f1.callHello()
+#f1.callHello()
+#print(help(MyFunctions.sayHello))
+
+s1=Special()
+#s1.callMutipleArgFunction()
+
+gear = Part("A12345","Gear")
+engine = Part("A12346","Engine")
+gear.showPartInfo()
+engine.showPartInfo()
+
 
 
 

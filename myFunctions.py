@@ -2,14 +2,22 @@ class MyFunctions:
 
   
   def sayHello(self,name,emoji):
+    '''
+    Prints hello string using the provided arguments
+    '''
     print(f'Hello {name}  {emoji}')
 
   # Method with default arguments
   def sayHello2(self,name="Billu",emoji=":("):
     print(f'Hello {name}  {emoji}')
   
-  
+
   def callHello(self):
+    help(self.sayHello)
+    '''
+    Call hello in different ways
+    '''
+
     # Postional arguments
     print("Called with positional arguments")
     self.sayHello("Pai", ":)")
