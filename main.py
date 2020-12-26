@@ -4,7 +4,7 @@ from dictionaries import Dictry
 from basics import Basics
 from myFunctions import MyFunctions
 from special import Special
-from oops import Part
+from oops import Part,MBPart
 
 str = "Umakanth Pai"
 
@@ -48,10 +48,23 @@ f1=MyFunctions()
 s1=Special()
 #s1.callMutipleArgFunction()
 
-gear = Part("A12345","Gear")
-engine = Part("A12346","Engine")
+#gear = Part("A12345","Gear")
+#engine = Part("A12346","Engine")
+#gear.showPartInfo()
+#engine.showPartInfo()
+
+gear = Part.createPart("Gear")
 gear.showPartInfo()
+print(" ")
+engine = Part.createPart("Engine")
 engine.showPartInfo()
+print(" ")
+print(Part.generateDisplayPartNumber(gear.partNumber))
+print(" ")
+mbPart = MBPart("889","Mercedes Part")
+mbPart.showPartInfo()
+print(" ")
+print(isinstance(mbPart,Part))
 
 
 
