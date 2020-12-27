@@ -4,7 +4,7 @@ from dictionaries import Dictry
 from basics import Basics
 from myFunctions import MyFunctions
 from special import Special
-from oops import Part,MBPart
+from oops import Part,MBPart, FLPart
 
 str = "Umakanth Pai"
 
@@ -61,11 +61,17 @@ engine.showPartInfo()
 print(" ")
 print(Part.generateDisplayPartNumber(gear.partNumber))
 print(" ")
-mbPart = MBPart("889","Mercedes Part")
-mbPart.showPartInfo()
+mbPart = MBPart("889","Wheel")
+#mbPart.showPartInfo()
 print(" ")
 print(isinstance(mbPart,Part))
-
+print(" ")
+flPart = FLPart("889","Cam")
+#flPart.showPartInfo()
+print("Polymorphism ")
+for part in [mbPart,flPart]:
+  part.showPartInfo()
+print(" ")
 
 
 

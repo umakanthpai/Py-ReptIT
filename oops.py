@@ -40,4 +40,15 @@ class MBPart(Part):
 
   def showPartInfo(self):
     super().showPartInfo()
-    print(" " + self.endNumber)
+    print(" MB End Number:" + self.endNumber)
+
+class FLPart(Part):
+  def __init__(self,endNumber,nomenclature):
+    partNr = Part.generatePartNumber()
+    super().__init__(partNr,nomenclature)
+    self.endNumber = endNumber    
+
+  def showPartInfo(self):
+    super().showPartInfo()
+    print(" Freight Liner End Number:" + self.endNumber)
+  
