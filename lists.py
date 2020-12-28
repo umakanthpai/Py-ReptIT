@@ -56,6 +56,21 @@ class Lists:
       print(other)
       print(d)
       print("------------------")
+    
+    def listComprehension(self,listParam=[22,33,1,4,6,8,88]):
+      print("------------------")
+      print("Conditional list comprehension")
+      newList = [x for x in listParam if x%2==0]
+      print(newList)
+
+      print("\nNested if in list comprehension both if's must be satisfied.")
+      num_list = [y for y in range(100) if y % 2 == 0 if y % 5 == 0]
+      print(num_list)
+
+      print("\nif..else in list comprehension")
+      obj = ["Even" if i%2==0 else "Odd" for i in range(10)]
+      print(obj)
+      print("------------------")
 
 
 
