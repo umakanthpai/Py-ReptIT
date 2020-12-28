@@ -6,6 +6,7 @@ from myFunctions import MyFunctions
 from special import Special
 from oops import Part,MBPart, FLPart
 from dunderMethods import Dunder
+from pureFunctions import PureFunctions
 
 #str = "Umakanth Pai"
 
@@ -102,10 +103,24 @@ def aboutDunder():
   d1()
   print(d1["name"])
 
+def aboutPureFunctions():
+  p1 = PureFunctions()
+  aList = p1.doX2Map([3,5,6,7])
+  print(f'Output output {aList}, observe input and output list sizes are same')
 
+  aList = p1.doFilter([3,5,6,7,9,11,5])
+  print(f'Filter output {aList}, observe output list size is less than input')
+
+  aList = p1.doZip()
+  print(f'Zipped output {aList}')
+
+  print(p1.doReduce())
+  p1.doExercises()
 
 # Call function about which you want to revise
 #aboutQuirks()
 #aboutLists()
-aboutDunder()
+#aboutDunder()
+aboutPureFunctions()
+
 

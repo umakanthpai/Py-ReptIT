@@ -29,7 +29,7 @@ class Special:
   def callMutipleArgFunction(self):
     self.sum_func(2,3,4,5)
     self.sum_func_kwargs(n1=10,n2=20)
-    self.funcWithAllTypesOfArgs("normal",3,4,5,name1="aaa", name2="bbb")
+    self.funcWithAllTypesOfArgs("normal",[3,4,5],[3,4,5],name1="aaa", name2="bbb")
 
   def point(self,x, y): 
     print(x,y) 
