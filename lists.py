@@ -72,5 +72,28 @@ class Lists:
       print(obj)
       print("------------------")
 
+    def sortUsingKeyFunction(self):
+      L = ["cccc", "b", "dd", "aaa"] 
+      print("\n\n")
+      print(f"Input list: {L})")
+      print ("Normal sort :", sorted(L)) 
+      print ("Sort with key function using len():", sorted(L, key = len)) 
+      
+      print("\n\n")
+      def func(x): 
+        return x % 7
+    
+      L = [15, 3, 11, 7] 
+      print ("Normal sort :", sorted(L)) 
+      print ("Sorted with key:", sorted(L, key = func))
 
+    def sortUsingUserDefinedFunction(self):
+      print("\n\n")
+      def func(x): 
+          return x % 7
+        
+      L = [15, 3, 11, 7] 
+        
+      print ("Normal sort :", sorted(L)) 
+      print ("Sorted with key using user defined function:", sorted(L, key = func))            
 

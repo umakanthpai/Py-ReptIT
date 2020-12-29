@@ -7,6 +7,8 @@ from special import Special
 from oops import Part,MBPart, FLPart
 from dunderMethods import Dunder
 from pureFunctions import PureFunctions
+from lambdas import Lambdas
+from comprehensions import Comprehensions
 
 #str = "Umakanth Pai"
 
@@ -21,6 +23,8 @@ def aboutLists():
   l1.methods()
   l1.unpacking()
   l1.listComprehension()
+  l1.sortUsingKeyFunction()
+  l1.sortUsingUserDefinedFunction()
 
 def aboutMatrix():
   m1 = Matrix()
@@ -117,10 +121,32 @@ def aboutPureFunctions():
   print(p1.doReduce())
   p1.doExercises()
 
+def aboutLambdas():
+  l1 = Lambdas()
+
+  aList = l1.doX2Map([3,5,6,7])
+  print(f'Output output {aList}, observe input and output list sizes are same')
+
+  aList = l1.doFilter([3,5,6,8,10,11,5])
+  print(f'Filter output {aList}, observe output list size is less than input')
+
+  print(l1.doReduce())
+
+  l1.doExercises()
+
+def aboutComprehensions():
+  c1 = Comprehensions()
+  c1.doCreateList()
+  c1.doCreateSet()
+  c1.doCreateDictionary()
+  c1.doExercises()
+
 # Call function about which you want to revise
 #aboutQuirks()
 #aboutLists()
 #aboutDunder()
-aboutPureFunctions()
+#aboutPureFunctions()
+#aboutLambdas()
+aboutComprehensions()
 
 
